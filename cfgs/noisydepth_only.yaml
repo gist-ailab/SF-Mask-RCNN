@@ -1,0 +1,19 @@
+input_modality: "raw_depth"
+fusion_method: null
+backbone_name: "resnet50"
+
+batch_size : 2
+max_epoch : 20
+lr : 0.0001
+wd : 0.0001
+
+width: 640
+height: 480
+dataset: "synthetic"
+dataset_path: "/path/to/synthetic/dataset"
+
+depth_norm: 
+  min: 0.0
+  max: 1.0
+
+best_epoch: 0
