@@ -2,7 +2,7 @@
 
 Synthetic RGB-D Fusion (SF) Mask R-CNN for unseen object instance segmentation
 
-> S. Back, J. Kim, R. Kang, S. Choi and K. Lee, Back, Seunghyeok, et al. **Segmenting unseen industrial components in a heavy clutter using rgb-d fusion and synthetic data.** 2020 IEEE International Conference on Image Processing (ICIP). IEEE, 2020. [[Paper]](https://ieeexplore.ieee.org/abstract/document/9190804) [[Video]](https://youtu.be/eB4LKfYZwYo)
+> S. Back, J. Kim, R. Kang, S. Choi and K. Lee. **Segmenting unseen industrial components in a heavy clutter using rgb-d fusion and synthetic data.** 2020 IEEE International Conference on Image Processing (ICIP). IEEE, 2020. [[Paper]](https://ieeexplore.ieee.org/abstract/document/9190804) [[Video]](https://youtu.be/eB4LKfYZwYo)
 
 ![Demo](./imgs/demo.gif)
 
