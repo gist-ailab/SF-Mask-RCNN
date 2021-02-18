@@ -122,7 +122,7 @@ $ python demo.py --cfg rgb_noisydepth_earlyfusion \
     --weight_path $WEIGHT_PATH/SFMaskRCNN_EarlyFusion.tar 
 
 
-# SF Mask R-CNN (early fusion)
+# SF Mask R-CNN (late fusion)
 $ python demo.py --cfg rgb_noisydepth_latefusion \
     --weight_path $WEIGHT_PATH/SFMaskRCNN_LateFusion.tar 
 ```
