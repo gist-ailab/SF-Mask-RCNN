@@ -19,6 +19,8 @@ Unseen object instance segmentation performance on [WISDOM](https://sites.google
 |             Mask R-CNN            |    RGB    |         No         | ResNet-50-FPN |   40.1  |  36.7  |     [Ito et al.](https://openaccess.thecvf.com/content/ACCV2020/html/Ito_Point_Proposal_based_Instance_Segmentation_with_Rectangular_Masks_for_Robot_ACCV_2020_paper.html)    |
 |               D-SOLO              |    RGB    |         No         | ResNet-50-FPN |   42.0  |  39.1  |     Ito et al.    |
 |               PPIS                |    RGB    |         No         | ResNet-50-FPN |   52.3  |  48.1  |     Ito et al.    |
+|             Mask R-CNN            |    RGB    |         Yes (Ours) | ResNet-50-FPN |   59.0  |  61.4  |     Ours          |
+|             Mask R-CNN            |    Depth  |         Yes (Ours) | ResNet-50-FPN |   59.6  |  60.4  |     Ours          |
 |    SF Mask R-CNN (early fusion)   | RGB-Depth |      Yes (Ours)    | ResNet-50-FPN |   55.5  |  57.2  |        [Ours](https://ieeexplore.ieee.org/abstract/document/9190804)       |
 |    SF Mask R-CNN (late fusion)    | RGB-Depth |      Yes (Ours)    | ResNet-50-FPN |   58.7  |  59.0  |        Ours       |
 |**SF Mask R-CNN (confidence fusion)**| RGB-Depth |      Yes (Ours)    | ResNet-50-FPN | **60.5**|**61.0**|        Ours       |
@@ -57,9 +59,11 @@ $ conda activate sfmaskrcnn
 ```
 
 2. Download the provided SF Mask R-CNN weights pre-trained on our custom dataset. 
-- [early fusion](https://drive.google.com/file/d/1sbGtpzl01vwrqSNOlTy80hG3KlDmjaaX/view?usp=sharing)
-- [late fusion](https://drive.google.com/file/d/1YkCXyYRzzkccvwOMGzY0dJZpjBN2Nodd/view?usp=sharing)
-- [confidence fusion](https://drive.google.com/file/d/1ewc-fxTX-mJ1kiS1Po-uWHzeUbBtqzpe/view?usp=sharing)
+- [rgb only](https://drive.google.com/file/d/128PI9Z6h3VBjBOVEIHV6lPUnk9YerfL6/view?usp=sharing)
+- [depth only](https://drive.google.com/file/d/1UTnaehYIHbZzvGbHAAOqEjNxt9FN41RV/view?usp=sharing)
+- [early fusion](https://drive.google.com/file/d/1H5HUo2qP56PfD893mqvuamiiyKfaT-Ux/view?usp=sharing)
+- [late fusion](https://drive.google.com/file/d/1__Vqj9k8K8BckJaikrMqhYNdcjKuvVOf/view?usp=sharing)
+- [confidence fusion](https://drive.google.com/file/d/11RonCOyv5YOBTZJXZxP75XT_V0xuEXTm/view?usp=sharing)
 
 3. Download the WISDOM-Real dataset [[Link]](https://sites.google.com/view/wisdom-dataset/dataset_links)
 
