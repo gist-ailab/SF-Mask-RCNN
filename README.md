@@ -112,6 +112,14 @@ $ python inference.py --gpu 0 --cfg rgb_noisydepth_confidencefusion \
 <img src="./imgs/example2.png" height="150">
 <img src="./imgs/example3.png" height="150">
 
+Our custom synthetic dataset
+```
+$ python inference.py --gpu 0 --cfg rgb_noisydepth_confidencefusion \
+    --eval_data synthetic --vis_depth \
+    --dataset_path examples \
+    --weight_path $WEIGHT_PATH/SFMaskRCNN_ConfidenceFusion.tar 
+```
+<img src="./imgs/syn_example.png" height="150">
 
 ### Demo with RealSense
 
