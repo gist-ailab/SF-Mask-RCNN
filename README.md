@@ -40,7 +40,7 @@ The main differences from [1] are
 
 ## Updates
 - SF Mask R-CNN has been released (2020/02/18)
-- Paper extended from [1] with the detailed description, synthetic data, and robot demo will be publicly available soon... Stay tuned!
+- Train dataset has been released (2022/05/16)
 
 
 
@@ -75,14 +75,16 @@ $ export WEIGHT_PATH={/path/to/the/pretrained/weights}
 ```
 
 
-
 ### Train
 
-To train an SF Mask R-CNN (confidence fusion, RGB-noisy depth as input) on a synthetic dataset. 
+1. Download the synthetic train dataset at [GDrive](https://drive.google.com/file/d/1GN3_npwor1Yeng2n7XIqvzJ9BVSMoJ3W/view?usp=sharing)
+2. Unzip the downloaded dataset, and modify the `dataset_path` of the config file correspondingly.
+
+3. To train an SF Mask R-CNN (confidence fusion, RGB-noisy depth as input) on a synthetic dataset. 
 ```
 $ python train.py --gpu 0 --cfg rgb_noisydepth_confidencefusion
 ```
-To fine-tune the SF Mask R-CNN on WISDOM dataset
+4. To fine-tune the SF Mask R-CNN on WISDOM dataset
 ```
 $ python train.py --gpu 0 --cfg rgb_noisydepth_confidencefusion_FT --resume
 ```
