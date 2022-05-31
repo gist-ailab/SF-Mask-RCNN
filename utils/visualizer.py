@@ -56,7 +56,8 @@ def draw_prediction(image, pred, thresh, vis_depth=False):
     cnd = scores[:] > thresh
 
     masks = np.array(np.squeeze(masks), dtype=np.bool)
-    instviz = imgviz.instances2rgb(image=rgb, masks=masks[cnd, :, :], labels=list(range(len(scores[cnd]))))
+    instviz = imgviz.instances2rgb(image=rgb, masks=masks[cnd, :, :], labels=list(range(len(scores[cnd]))), 
+                                    captions=[str(round(x, 2)) for x in scores[cnd]])
     plt.figure(dpi=200)
     plt.imshow(instviz)
     plt.axis("off")
